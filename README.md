@@ -1,1 +1,3 @@
 # work_scratch
+
+Just some random Notebooks I used to figure out some things at work.  They may have some useful things I might want to reference later...
