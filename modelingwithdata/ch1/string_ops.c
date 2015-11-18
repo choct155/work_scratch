@@ -4,8 +4,9 @@
 #include <malloc.h>
 #include <string.h>
 
-void astrncpy(char **base, char *copyme){
+char* astrcpy(char **base, const char *copyme){
 
+<<<<<<< HEAD
 	printf("\nWe are inside the function, astrncpy.\n");
 	printf("\nThis function has accepted two arguments:\n");
 	printf("**base > a pointer to the pointer array containing the string to be replaced.\n");
@@ -16,10 +17,15 @@ void astrncpy(char **base, char *copyme){
 	printf("Therefore, modifying the value at the location identified by the pointer copy modifies the original string.\n");
 	printf("\nCopying '%s' (*copyme) into a location currently featuring the following string: '%s' (**base)\n", copyme,*base);
 	printf("The location of our string to be copied (%s) is %p.\n", copyme, &copyme);
+=======
+	printf("Copying '%s' into a location currently featuring the following string: '%s'\n", copyme,*base);
+	printf("The location of our string to be copied (%s) is %p.\n", copyme, (const void *) copyme);
+>>>>>>> 79c1f15aa9a190e8fab8e6d3530c20be47271998
 	printf("The location of our string to be replaced (%s) is %p.\n", *base, base);
 
 	//Declare string length variable
 	size_t new_len=strlen(copyme);
+<<<<<<< HEAD
 	printf("Calculating new length for replaced memory allocation (%d).\n",new_len);
 
 	//Reallocate pointer array
@@ -61,10 +67,26 @@ void astrncat(char **base, char *appendme){
 	strncat(*base,appendme,new_len);
 
 	printf("The string at location %p is now '%s'\n", base, *base);
-	
-}
+=======
+	printf("***Calculating new length for replaced memory allocation (%zu).***\n",new_len);
 
-void main(){
+	printf("***Reallocating memory allocation.***\n");
+	//Generate temporary character object
+	char *tmp;
+	//If reallocation is possible...
+	if (*tmp=realloc(*base,sizeof(char)*(new_len+1)) != NULL){
+		//...assign that block to *base...
+		*base=tmp;	
+>>>>>>> 79c1f15aa9a190e8fab8e6d3530c20be47271998
+	
+		//...and copy copyme content to base string location
+		strcpy(*base,copyme);
+	}
+	printf("The string at location %p is now %s\n", base, *base);
+	return tmp;
+}
+	
+int main(void){
 
 	//Declare iterator
 	int i;
@@ -75,6 +97,7 @@ void main(){
 	char first_lit2[]="Fortran? ";
 	char second2[]="Now that's a name I've not heard in a long time.";
 
+<<<<<<< HEAD
 	//Capture elements of first_lit in pointer array (so we can get at the pointer to the strings pointer)
 	char *first; //Declare pointer to pointer array that represents the first string
 	first=malloc((strlen(first_lit)+1)*sizeof(char)); //Allocate space for the pointer array
@@ -99,4 +122,18 @@ void main(){
 	printf(line);
 	printf("asprintf seems like a handy way to convert numbers to strings\n");
 
+=======
+	//Convert first string to array (so we can get at the pointer to the strings pointer)
+	char *first; //Declare pointer to pointer array that represents the first string
+	first=malloc((strlen(first_lit)+1)*sizeof(char)); //Allocate space for the pointer array
+	strcpy(first,first_lit); //Assign values to the pointer locations
+
+	//Try to copy copyme into base, and if it works print the result to standard out
+	printf("***Entering `astrcpy`***\n");
+	if(astrcpy(&first,second)){
+		puts(first);
+	}
+	printf("***Cleaning Up***\n");	
+	//free(first);
+>>>>>>> 79c1f15aa9a190e8fab8e6d3530c20be47271998
 }

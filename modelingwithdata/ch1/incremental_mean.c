@@ -19,12 +19,9 @@ double find_mean(double *in, int length){
 	//Declare iterator
 	int i;
 
-	for (i=0; i < length; i++){
-		printf("%d\n",in[i] );
-	}
-
-	printf("INDEX\tVALUE\tMEAN\n");
-	printf("-----\t-----\t----\n");
+	printf("INDEX\tVALUE\t\tMEAN\n");
+	printf("-----\t-----\t\t----\n");
+	printf("%d\t%f\t%f\n",0,in[0],mean );
 
 	//For each remaining position in the vector
 	for (i=1; i < length; i++){
@@ -33,7 +30,7 @@ double find_mean(double *in, int length){
 		//Calculate the new mean based upon the old
 		mean = ((i*old_mean)/(i+1)) + (in[i]/(i+1));
 
-		printf("%d\t%d\t%d\n",i,in[i],mean );
+		printf("%d\t%f\t%f\n",i,in[i],mean );
 	}
 }
 
@@ -47,8 +44,7 @@ int main(void){
 
 	//Populate vector
 	for (i=0; i < vec_len; i++){
-		vec[i]=i;
-		printf("%d\n",i );
+		vec[i]=i*1.;
 	}
 
 	//Calculate a running mean
