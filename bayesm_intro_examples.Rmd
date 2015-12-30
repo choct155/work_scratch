@@ -1,0 +1,171 @@
+---
+title: "bayesm_tutorial"
+author: "Marvin Ward Jr."
+date: "December 29, 2015"
+output: html_document
+---
+
+This is a quick intro to the `bayesm` library, which features a host of bayesian estimators.  (Hat tip to the [Laboratory for Interdisciplinary Statistical Analysis](https://vimeo.com/14553953).) The motivation is the need to evaluate a multivariate probit model, which surprisingly few libraries in R or Python support.
+
+```{r Package Load}
+library(bayesm)
+library(coda)
+```
+
+
+The first thing to do is check out the data.  We will be using the popular `cars` dataset.
+
+```{r Data View}
+head(cars)
+plot(cars$speed,cars$dist,ylab='Stopping Distance',xlab='Speed')
+```
+
+Our goal is to evaluate the impact of car speed on stopping distance.  We are using the `runiregGibbs` function to perform this analysis.  It estimates the betas and the error variance in MLR assuming iid normal errors.  It requires 3 arguments:
+
+1. Data
+2. Prior
+3. MCMC
+
+All of these must be lists.
+
+*Regression Estimation*
+
+Apparently, we need to work with vectors.  This is trivial for the dependent $y$, but we must also add a constant column to the design matrix $X$.  Once these arrays are constructed (array being used here as a catch all for vectors and matrices), we throw them both into the Data list.
+
+```{r Data}
+#Convert dependent to vector
+y1=as.vector(cars$dist)
+
+#Define constant column
+constant=matrix(1,nrow(cars),1)
+
+#Consolidate constant column and independent variable in matrix
+X1=cbind(constant,cars$speed)
+
+#Throw both the dependent vector and design matrix into the Data list
+Data1=list(y=y1,X=X1)
+```
+
+We need to establish priors for both the estimate, $\beta$, and the variance, $\sigma^2$.  The former is distributed normally, while the latter features a $\chi^2$ distribution.  The arguments we need are as follows:
+
+1. Prior mean (`betabar`)
+2. Prior precision matrix (which is the inverse of the variance; `A`)
+3. Degrees of freedom (`nu`)
+4. Scale parameter (`ssq`)
+
+The first two arguments correspond to $\beta$, while the second to correspond to $\sigma^2$.
+
+```{r Prior Distribution}
+#Define prior mean (intercept,slope >> just a list of scalars)
+betabar1=c(0,0)
+
+#Define prior precision (dimension is driven by number of coefficients to be estimated)
+A1=0.01*diag(2)
+
+#Define degrees of freedom
+nu1=3
+
+#Define scale parameter
+ssq1=var(y1)
+
+#Conolidate prior info into list
+Prior1=list(betabar=betabar1,A=A1,nu=nu1,ssq=ssq1)
+```
+
+Finally, we need to tell the sampler how many iterations we want it to run (`R`), and whether or not we want thinning to be performed (taking sparse observations; `keep`).
+
+```{r MCMC}
+#Define number of iterations
+R1=5000
+
+#Define thinning rate (1 means no thinning)
+keep1=1
+
+#Compile MCMC info into list
+MCMC1=list(R=R1,keep=keep1)
+```
+
+Now we can run the model and check out some diagnostics.
+
+```{r Model Estimation}
+#Run the model
+simOut=runiregGibbs(Data1,Prior1,MCMC1)
+
+#Plot diagnostics
+plot(simOut$betadraw)
+plot(simOut$sigmasqdraw)
+```
+
+We can also get printout distributional information with `summary()` commands.  Note that the `bayesm` library provides Equal Tail Probability intervals.  If we want HPD intervals, we need the `coda` library.
+
+```{r Diagnostics}
+#Capture summaries of both beta and sigmasq
+summary(simOut$betadraw)
+summary(simOut$sigmasqdraw)
+
+#Capture HPD intervals
+HPDinterval(simOut$betadraw)
+HPDinterval(simOut$sigmasqdraw)
+```
+
+
+*Probit Regression*
+
+Now we are going to look at a probit model with multiple regressors.  These data look at admission to some program given GRE scores and GPA.  Let's set up the data.
+
+```{r Probit Data}
+#Read in data
+mydata<-read.csv("http://www.ats.ucla.edu/stat/data/binary.csv")
+
+#Inspect data
+head(mydata)
+
+#Capture dependent (apparently we didn't need to convert to vector above?)
+y2=mydata$admit
+
+#Capture design matrix
+constant2=matrix(1,nrow(mydata),1)
+X2=cbind(constant2,mydata$gre,mydata$gpa)
+
+#Consolidate in list
+Data2=list(y=y2,X=X2)
+```
+
+Now we are setting up our priors.  Take note of the changes theat come from an extra regressor. Note also that the distributional information for variance is no longer in play.  The convention is to work with standardized variance in probit models of 1.
+
+```{r Probit Prior}
+#Define prior means
+betabar2=c(0,0,0)
+
+#Define prior precision matrix
+A2=0.01*diag(3)
+
+#Consolidate in list
+Prior2=list(betabar=betabar2,A=A2)
+```
+
+Again, we conclude set up by setting the number of iterations for the Gibb sampler, and setting keep behavior.
+
+```{r Pobit MCMC}
+#Define number of iterations
+R2=10000
+
+#Define keep behavior
+keep2=1
+
+#Consolidate in list
+MCMC2=list(R=R2,keep=keep2)
+```
+
+This time we will be using the `rbprobitGibbs()` estimator.  Let's estimate our posterior for $\beta$ and see what we get.
+
+```{r Probit Estimation}
+#Fit model
+simOut2=rbprobitGibbs(Data2,Prior2,MCMC2)
+
+#Plot posterior distribution
+plot(simOut2$betadraw)
+
+#Check out summary
+summary(simOut2$betadraw)
+```
