@@ -1,0 +1,14 @@
+#Add Stretch to your sources list
+
+sudo sed -i '$a
+
+deb http://httpredir.debian.org/debian stretch main
+
+deb-src http://httpredir.debian.org/debian stretch main' /etc/apt/sources.list
+
+sudo apt-get update
+
+
+#Get Apophenia
+
+sudo apt-get install apophenia-bin
