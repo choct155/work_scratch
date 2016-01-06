@@ -10,6 +10,7 @@ This is a quick intro to the `bayesm` library, which features a host of bayesian
 ```{r Package Load}
 library(bayesm)
 library(coda)
+library(reshape2)
 ```
 
 
@@ -168,4 +169,102 @@ plot(simOut2$betadraw)
 
 #Check out summary
 summary(simOut2$betadraw)
+```
+
+*Multivariate Probit*
+
+Now we have a solid foundation to perform an example with the estimator of interest, the multivariate probit model.  Our test data will be marketing data seeking to understand scotch consumption.  Specifically, Edwards and Allenby (2003) sought to explore the correlation structure underlying the scotch choices made by survey respondents.  The dependent captures whether or not the respondent enjoys a particular scotch.  There are 21 scotches to choose from, and since respondents can consume more than one of them, this is an appropriate case for a multivariate model.
+
+```{r Scotch Data}
+#Load data
+data(Scotch)
+
+#Check out head
+head(Scotch)
+```
+
+As can be seen, there are not covariates, so the implied design matrix is just an identity matrix.  The coefficient can be interpreted as the mean for the latent variable underlying the binary choice.  The correlation in the latent variable can be viewed as a measure of similarity across scotches.  
+
+The method for this kind of estimation is `rmvpGibbs()`.  Let's get our data together.  $y$ is a vector of binary outcomes of length  $n*p$, where $n$ is the number of observations for each of $p$ scotches.  $X$ is a  $n*p \times k$ design matrix, where $k$ is the number of regressors.  In this case, we have no explanatory variables, so $k=1$, and $X$ is simply the constant vector on the RHS.
+
+```{r Scotch Data Setup}
+#Capture number of equations (scotches)
+p<-ncol(Scotch)
+
+#Capture number of observations
+n<-nrow(Scotch)
+
+#Capture the number of covariates (coefficients to be estimated)
+d<-1
+
+#Capture regressor data
+z<-matrix(d)
+
+#Construct design matrix (kronecker product of d-dimensional array of regressors and Ip for each equation)
+#X3_tmp<-z %x% diag(d)
+X3_tmp<-z %x% diag(p)
+X3<-X3_tmp
+for(i in 2:n) { X3=rbind(X3,X3_tmp)}
+
+#Capture number of columns k
+k<-ncol(X3)
+
+#Convert to long format
+scotch_long<-melt(Scotch)
+
+#Capture dependent data
+y3<-scotch_long$value
+
+#Capture regressors
+#X3<-matrix(1,length(y3),1)
+
+#Consolidate in list
+Data3=list(p=nrow(Scotch),y=y3,X=X3)
+```
+
+We must also set our prior distributions for $\beta$ and $\Sigma$.
+
+```{r Scotch Prior}
+#Capture priors for coefficients
+betabar3<-c(rep(0,k))
+A3<-0.01*diag(k)
+
+#Capture priors for variance (start with default)
+nu3<-(n-1)+3
+V3<-nu3*diag(p)
+
+#Consolidate in list
+Prior3=list(betabar=betabar3,A=A3,nu=nu3,V=V3)
+```
+
+It's also useful (required) to provide initial conditions for the Gibbs sampler.
+
+```{r Scotch MCMC}
+#Define initial values
+beta0_3<-rep(0,p)
+sigma0_3<-diag(p)
+sigma0_3[lower.tri(sigma0_3)]<-.5
+sigma0_3[upper.tri(sigma0_3)]<-.5
+
+#Define number of iterations
+R3<-10000
+
+#Define keep behavior
+keep3=1
+
+#Consolidate in list
+MCMC3=list(beta0=beta0_3,sigma0=sigma0_3,R=R3,keep=keep3)
+```
+
+Does it run??
+
+```{r Scotch Estimation}
+#Fit model
+simOut3=rmvpGibbs(Data3,Prior3,MCMC3)
+
+#Plot posterior distribution
+plot(simOut3$betadraw)
+
+#Check out summary
+summary(simOut3$betadraw)
 ```
