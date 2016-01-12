@@ -1,0 +1,87 @@
+                                         The SAS System       11:52 Monday, January 11, 2016   1
+
+                                       The QLIM Procedure
+
+                                Discrete Response Profile of y1
+ 
+                                                              Total
+                            Index         Value           Frequency
+
+                              1             0                  2189
+                              2             1                  2811
+
+
+                                Discrete Response Profile of y2
+ 
+                                                              Total
+                            Index         Value           Frequency
+
+                              1             0                  2217
+                              2             1                  2783
+
+
+                                Discrete Response Profile of y3
+ 
+                                                              Total
+                            Index         Value           Frequency
+
+                              1             0                  2189
+                              2             1                  2811
+
+
+                                Discrete Response Profile of y4
+ 
+                                                              Total
+                            Index         Value           Frequency
+
+                              1             0                  3855
+                              2             1                  1145
+
+
+
+
+                                       Model Fit Summary
+
+                        Number of Endogenous Variables                 4
+                        Endogenous Variable                  y1 y2 y3 y4
+                        Number of Observations                      5000
+                        Log Likelihood                             -8413
+                        Maximum Absolute Gradient               12.36832
+                        Number of Iterations                          48
+                        Optimization Method                 Quasi-Newton
+                        AIC                                        16866
+                        Schwarz Criterion                          16997
+                        Seed for Monte Carlo Integration       338495001
+                        Number of Draws                               20
+                                         The SAS System       11:52 Monday, January 11, 2016   2
+
+                                       The QLIM Procedure
+
+Algorithm converged.                                                                            
+
+
+                                      Parameter Estimates
+ 
+                                                     Standard                 Approx
+           Parameter       DF        Estimate           Error    t Value    Pr > |t|
+
+           y1.Intercept     1        0.161275        0.017484       9.22     <.0001 
+           y1.x1            1        1.099069        0.062436      17.60     <.0001 
+           y2.Intercept     1        0.891106        0.032226      27.65     <.0001 
+           y2.x1            1        0.084168        0.060965       1.38     0.1674 
+           y2.x2            1       -0.882944        0.032609     -27.08     <.0001 
+           y3.Intercept     1        1.011857        0.078285      12.93     <.0001 
+           y3.x1            1       -1.945929        0.071338     -27.28     <.0001 
+           y3.x2            1        0.414401        0.067658       6.12     <.0001 
+           y3.x3            1       -0.774113        0.034651     -22.34     <.0001 
+           y4.Intercept     1       -6.000879        0.184753     -32.48     <.0001 
+           y4.x1            1        0.938476        0.093006      10.09     <.0001 
+           y4.x2            1       -0.117934        0.091531      -1.29     0.1976 
+           y4.x3            1        2.952334        0.084422      34.97     <.0001 
+           y4.x4            1       -0.526701        0.173232      -3.04     0.0024 
+           _Rho.y1.y2       1        0.998940        0.000551    1813.09     <.0001 
+           _Rho.y1.y3       1        0.164840        0.023000       7.17     <.0001 
+           _Rho.y1.y4       1        0.153627        0.031405       4.89     <.0001 
+           _Rho.y2.y3       1        0.165028        0.022968       7.19     <.0001 
+           _Rho.y2.y4       1        0.163134        0.031264       5.22     <.0001 
+           _Rho.y3.y4       1        0.749707        0.024015      31.22     <.0001 

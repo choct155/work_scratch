@@ -1,0 +1,556 @@
+1                                                          The SAS System                             11:52 Monday, January 11, 2016
+
+NOTE: Unable to open SASUSER.REGSTRY. WORK.REGSTRY will be opened instead.
+NOTE: All registry changes will be lost at the end of the session.
+
+WARNING: Unable to copy SASUSER registry to WORK registry. Because of this, you will not see registry customizations during this 
+         session.
+NOTE: Unable to open SASUSER.PROFILE. WORK.PROFILE will be opened instead.
+NOTE: All profile changes will be lost at the end of the session.
+NOTE: Copyright (c) 2002-2012 by SAS Institute Inc., Cary, NC, USA. 
+NOTE: SAS (r) Proprietary Software 9.4 (TS1M0) 
+      Licensed to CONGRESSIONAL BUDGET OFFICE, Site 70080447.
+NOTE: This session is executing on the X64_7PRO  platform.
+
+
+
+NOTE: Updated analytical products:
+      
+      SAS/STAT 12.3 (maintenance)
+      SAS/ETS 12.3 (maintenance)
+
+NOTE: Additional host information:
+
+ X64_7PRO WIN 6.1.7601 Service Pack 1 Workstation
+
+NOTE: SAS initialization used:
+      real time           0.17 seconds
+      cpu time            0.12 seconds
+      
+1          *Read in simulated data;
+2          proc import datafile="C:\cygwin64\home\MarvinW\work_scratch\stata_test_data.csv"
+3          	out=test
+4          	dbms=csv
+5          	replace;
+6          run;
+
+7           /**********************************************************************
+8           *   PRODUCT:   SAS
+9           *   VERSION:   9.4
+10          *   CREATOR:   External File Interface
+11          *   DATE:      11JAN16
+12          *   DESC:      Generated SAS Datastep Code
+13          *   TEMPLATE SOURCE:  (None Specified.)
+14          ***********************************************************************/
+15             data WORK.TEST    ;
+16             %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+17             infile 'C:\cygwin64\home\MarvinW\work_scratch\stata_test_data.csv' delimiter =
+17       ! ',' MISSOVER DSD lrecl=32767 firstobs=2 ;
+18                informat _ best32. ;
+19                informat x1 best32. ;
+20                informat x2 best32. ;
+21                informat x3 best32. ;
+22                informat x4 best32. ;
+23                informat y1 best32. ;
+24                informat y2 best32. ;
+2                                        The SAS System           11:52 Monday, January 11, 2016
+
+25                informat y3 best32. ;
+26                informat y4 best32. ;
+27                informat r_in best32. ;
+28                informat obs_in best32. ;
+29                informat seed_in best32. ;
+30                format _ best12. ;
+31                format x1 best12. ;
+32                format x2 best12. ;
+33                format x3 best12. ;
+34                format x4 best12. ;
+35                format y1 best12. ;
+36                format y2 best12. ;
+37                format y3 best12. ;
+38                format y4 best12. ;
+39                format r_in best12. ;
+40                format obs_in best12. ;
+41                format seed_in best12. ;
+42             input
+43                         _
+44                         x1
+45                         x2
+46                         x3
+47                         x4
+48                         y1
+49                         y2
+50                         y3
+51                         y4
+52                         r_in
+53                         obs_in
+54                         seed_in
+55             ;
+56             if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro
+56       ! variable */
+57             run;
+
+NOTE: The infile 'C:\cygwin64\home\MarvinW\work_scratch\stata_test_data.csv' is:
+      Filename=C:\cygwin64\home\MarvinW\work_scratch\stata_test_data.csv,
+      RECFM=V,LRECL=32767,File Size (bytes)=440436,
+      Last Modified=11Jan2016:11:52:17,
+      Create Time=07Jan2016:15:58:51
+
+NOTE: 5000 records were read from the infile 
+      'C:\cygwin64\home\MarvinW\work_scratch\stata_test_data.csv'.
+      The minimum record length was 80.
+      The maximum record length was 91.
+NOTE: The data set WORK.TEST has 5000 observations and 12 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.03 seconds
+      cpu time            0.00 seconds
+      
+
+5000 rows created in WORK.TEST from C:\cygwin64\home\MarvinW\work_scratch\stata_test_data.csv.
+  
+3                                        The SAS System           11:52 Monday, January 11, 2016
+
+  
+  
+NOTE: WORK.TEST data set was successfully created.
+NOTE: The data set WORK.TEST has 5000 observations and 12 variables.
+NOTE: PROCEDURE IMPORT used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.04 seconds
+      
+
+58         
+59         *Estimate multivariate probit model;
+60         proc qlim data=test method=qn outest=mod_est covout;
+61         	model y1=x1;
+62         	model y2=x1 x2;
+63         	model y3 = x1 x2 x3;
+64         	model y4=x1 x2 x3 x4;
+65         	endogenous y1 y2 y3 y4 ~ discrete;
+66         	output out=mod_out marginal predicted prob;
+67         run;
+
+NOTE: Convergence criterion (FCONV=2.220446E-16) satisfied.
+NOTE: At least one element of the gradient is greater than 1e-3.
+NOTE: The data set WORK.MOD_EST has 22 observations and 23 variables.
+NOTE: The data set WORK.MOD_OUT has 5000 observations and 40 variables.
+NOTE: The PROCEDURE QLIM printed pages 1-2.
+NOTE: PROCEDURE QLIM used (Total process time):
+      real time           4:23.24
+      cpu time            4:22.25
+      
+
+68         
+69         *Inspect results output;
+70         data mod_est;
+71         	set mod_est;
+72         run;
+
+NOTE: There were 22 observations read from the data set WORK.MOD_EST.
+NOTE: The data set WORK.MOD_EST has 22 observations and 23 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+73         data mod_out;
+74         	set mod_out;
+75         run;
+
+NOTE: There were 5000 observations read from the data set WORK.MOD_OUT.
+NOTE: The data set WORK.MOD_OUT has 5000 observations and 40 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+4                                        The SAS System           11:52 Monday, January 11, 2016
+
+
+76         
+77         *Write model estimates and output to disk;
+78         proc export data=mod_est
+79         	outfile="C:\cygwin64\home\MarvinW\work_scratch\mod_est.csv"
+80         	dbms=CSV
+81         	replace;
+82         run;
+
+83          /**********************************************************************
+84          *   PRODUCT:   SAS
+85          *   VERSION:   9.4
+86          *   CREATOR:   External File Interface
+87          *   DATE:      11JAN16
+88          *   DESC:      Generated SAS Datastep Code
+89          *   TEMPLATE SOURCE:  (None Specified.)
+90          ***********************************************************************/
+91             data _null_;
+92             %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+93             %let _EFIREC_ = 0;     /* clear export record count macro variable */
+94             file 'C:\cygwin64\home\MarvinW\work_scratch\mod_est.csv' delimiter=',' DSD
+94       ! DROPOVER lrecl=32767;
+95             if _n_ = 1 then        /* write column names or labels */
+96              do;
+97                put
+98                   "_NAME_"
+99                ','
+100                  "_TYPE_"
+101               ','
+102                  "_STATUS_"
+103               ','
+104                  "y1_Intercept"
+105               ','
+106                  "y1_x1"
+107               ','
+108                  "y2_Intercept"
+109               ','
+110                  "y2_x1"
+111               ','
+112                  "y2_x2"
+113               ','
+114                  "y3_Intercept"
+115               ','
+116                  "y3_x1"
+117               ','
+118                  "y3_x2"
+119               ','
+120                  "y3_x3"
+121               ','
+122                  "y4_Intercept"
+123               ','
+124                  "y4_x1"
+125               ','
+5                                        The SAS System           11:52 Monday, January 11, 2016
+
+126                  "y4_x2"
+127               ','
+128                  "y4_x3"
+129               ','
+130                  "y4_x4"
+131               ','
+132                  "_Rho_y1_y2"
+133               ','
+134                  "_Rho_y1_y3"
+135               ','
+136                  "_Rho_y1_y4"
+137               ','
+138                  "_Rho_y2_y3"
+139               ','
+140                  "_Rho_y2_y4"
+141               ','
+142                  "_Rho_y3_y4"
+143               ;
+144             end;
+145           set  MOD_EST   end=EFIEOD;
+146               format _NAME_ $12. ;
+147               format _TYPE_ $8. ;
+148               format _STATUS_ $12. ;
+149               format y1_Intercept best12. ;
+150               format y1_x1 best12. ;
+151               format y2_Intercept best12. ;
+152               format y2_x1 best12. ;
+153               format y2_x2 best12. ;
+154               format y3_Intercept best12. ;
+155               format y3_x1 best12. ;
+156               format y3_x2 best12. ;
+157               format y3_x3 best12. ;
+158               format y4_Intercept best12. ;
+159               format y4_x1 best12. ;
+160               format y4_x2 best12. ;
+161               format y4_x3 best12. ;
+162               format y4_x4 best12. ;
+163               format _Rho_y1_y2 best12. ;
+164               format _Rho_y1_y3 best12. ;
+165               format _Rho_y1_y4 best12. ;
+166               format _Rho_y2_y3 best12. ;
+167               format _Rho_y2_y4 best12. ;
+168               format _Rho_y3_y4 best12. ;
+169             do;
+170               EFIOUT + 1;
+171               put _NAME_ $ @;
+172               put _TYPE_ $ @;
+173               put _STATUS_ $ @;
+174               put y1_Intercept @;
+175               put y1_x1 @;
+176               put y2_Intercept @;
+177               put y2_x1 @;
+178               put y2_x2 @;
+6                                        The SAS System           11:52 Monday, January 11, 2016
+
+179               put y3_Intercept @;
+180               put y3_x1 @;
+181               put y3_x2 @;
+182               put y3_x3 @;
+183               put y4_Intercept @;
+184               put y4_x1 @;
+185               put y4_x2 @;
+186               put y4_x3 @;
+187               put y4_x4 @;
+188               put _Rho_y1_y2 @;
+189               put _Rho_y1_y3 @;
+190               put _Rho_y1_y4 @;
+191               put _Rho_y2_y3 @;
+192               put _Rho_y2_y4 @;
+193               put _Rho_y3_y4 ;
+194               ;
+195             end;
+196            if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro
+196      ! variable */
+197            if EFIEOD then call symputx('_EFIREC_',EFIOUT);
+198            run;
+
+NOTE: The file 'C:\cygwin64\home\MarvinW\work_scratch\mod_est.csv' is:
+      Filename=C:\cygwin64\home\MarvinW\work_scratch\mod_est.csv,
+      RECFM=V,LRECL=32767,File Size (bytes)=0,
+      Last Modified=11Jan2016:11:56:41,
+      Create Time=08Jan2016:16:15:49
+
+NOTE: 23 records were written to the file 'C:\cygwin64\home\MarvinW\work_scratch\mod_est.csv'.
+      The minimum record length was 200.
+      The maximum record length was 287.
+NOTE: There were 22 observations read from the data set WORK.MOD_EST.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+22 records created in C:\cygwin64\home\MarvinW\work_scratch\mod_est.csv from MOD_EST.
+  
+  
+NOTE: "C:\cygwin64\home\MarvinW\work_scratch\mod_est.csv" file was successfully created.
+NOTE: PROCEDURE EXPORT used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.01 seconds
+      
+
+199        proc export data=mod_out
+200        	outfile="C:\cygwin64\home\MarvinW\work_scratch\mod_out.csv"
+201        	dbms=CSV
+202        	replace;
+203        run;
+
+204         /**********************************************************************
+7                                        The SAS System           11:52 Monday, January 11, 2016
+
+205         *   PRODUCT:   SAS
+206         *   VERSION:   9.4
+207         *   CREATOR:   External File Interface
+208         *   DATE:      11JAN16
+209         *   DESC:      Generated SAS Datastep Code
+210         *   TEMPLATE SOURCE:  (None Specified.)
+211         ***********************************************************************/
+212            data _null_;
+213            %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+214            %let _EFIREC_ = 0;     /* clear export record count macro variable */
+215            file 'C:\cygwin64\home\MarvinW\work_scratch\mod_out.csv' delimiter=',' DSD
+215      ! DROPOVER lrecl=32767;
+216            if _n_ = 1 then        /* write column names or labels */
+217             do;
+218               put
+219                  "_"
+220               ','
+221                  "x1"
+222               ','
+223                  "x2"
+224               ','
+225                  "x3"
+226               ','
+227                  "x4"
+228               ','
+229                  "y1"
+230               ','
+231                  "y2"
+232               ','
+233                  "y3"
+234               ','
+235                  "y4"
+236               ','
+237                  "r_in"
+238               ','
+239                  "obs_in"
+240               ','
+241                  "seed_in"
+242               ','
+243                  "P_y1"
+244               ','
+245                  "P_y2"
+246               ','
+247                  "P_y3"
+248               ','
+249                  "P_y4"
+250               ','
+251                  "Meff_P1_y1_x1"
+252               ','
+253                  "Meff_P2_y1_x1"
+254               ','
+255                  "Meff_P1_y2_x1"
+256               ','
+8                                        The SAS System           11:52 Monday, January 11, 2016
+
+257                  "Meff_P2_y2_x1"
+258               ','
+259                  "Meff_P1_y2_x2"
+260               ','
+261                  "Meff_P2_y2_x2"
+262               ','
+263                  "Meff_P1_y3_x1"
+264               ','
+265                  "Meff_P2_y3_x1"
+266               ','
+267                  "Meff_P1_y3_x2"
+268               ','
+269                  "Meff_P2_y3_x2"
+270               ','
+271                  "Meff_P1_y3_x3"
+272               ','
+273                  "Meff_P2_y3_x3"
+274               ','
+275                  "Meff_P1_y4_x1"
+276               ','
+277                  "Meff_P2_y4_x1"
+278               ','
+279                  "Meff_P1_y4_x2"
+280               ','
+281                  "Meff_P2_y4_x2"
+282               ','
+283                  "Meff_P1_y4_x3"
+284               ','
+285                  "Meff_P2_y4_x3"
+286               ','
+287                  "Meff_P1_y4_x4"
+288               ','
+289                  "Meff_P2_y4_x4"
+290               ','
+291                  "Prob_y1"
+292               ','
+293                  "Prob_y2"
+294               ','
+295                  "Prob_y3"
+296               ','
+297                  "Prob_y4"
+298               ;
+299             end;
+300           set  MOD_OUT   end=EFIEOD;
+301               format _ best12. ;
+302               format x1 best12. ;
+303               format x2 best12. ;
+304               format x3 best12. ;
+305               format x4 best12. ;
+306               format y1 best12. ;
+307               format y2 best12. ;
+308               format y3 best12. ;
+309               format y4 best12. ;
+9                                        The SAS System           11:52 Monday, January 11, 2016
+
+310               format r_in best12. ;
+311               format obs_in best12. ;
+312               format seed_in best12. ;
+313               format P_y1 best12. ;
+314               format P_y2 best12. ;
+315               format P_y3 best12. ;
+316               format P_y4 best12. ;
+317               format Meff_P1_y1_x1 best12. ;
+318               format Meff_P2_y1_x1 best12. ;
+319               format Meff_P1_y2_x1 best12. ;
+320               format Meff_P2_y2_x1 best12. ;
+321               format Meff_P1_y2_x2 best12. ;
+322               format Meff_P2_y2_x2 best12. ;
+323               format Meff_P1_y3_x1 best12. ;
+324               format Meff_P2_y3_x1 best12. ;
+325               format Meff_P1_y3_x2 best12. ;
+326               format Meff_P2_y3_x2 best12. ;
+327               format Meff_P1_y3_x3 best12. ;
+328               format Meff_P2_y3_x3 best12. ;
+329               format Meff_P1_y4_x1 best12. ;
+330               format Meff_P2_y4_x1 best12. ;
+331               format Meff_P1_y4_x2 best12. ;
+332               format Meff_P2_y4_x2 best12. ;
+333               format Meff_P1_y4_x3 best12. ;
+334               format Meff_P2_y4_x3 best12. ;
+335               format Meff_P1_y4_x4 best12. ;
+336               format Meff_P2_y4_x4 best12. ;
+337               format Prob_y1 best12. ;
+338               format Prob_y2 best12. ;
+339               format Prob_y3 best12. ;
+340               format Prob_y4 best12. ;
+341             do;
+342               EFIOUT + 1;
+343               put _ @;
+344               put x1 @;
+345               put x2 @;
+346               put x3 @;
+347               put x4 @;
+348               put y1 @;
+349               put y2 @;
+350               put y3 @;
+351               put y4 @;
+352               put r_in @;
+353               put obs_in @;
+354               put seed_in @;
+355               put P_y1 @;
+356               put P_y2 @;
+357               put P_y3 @;
+358               put P_y4 @;
+359               put Meff_P1_y1_x1 @;
+360               put Meff_P2_y1_x1 @;
+361               put Meff_P1_y2_x1 @;
+362               put Meff_P2_y2_x1 @;
+10                                       The SAS System           11:52 Monday, January 11, 2016
+
+363               put Meff_P1_y2_x2 @;
+364               put Meff_P2_y2_x2 @;
+365               put Meff_P1_y3_x1 @;
+366               put Meff_P2_y3_x1 @;
+367               put Meff_P1_y3_x2 @;
+368               put Meff_P2_y3_x2 @;
+369               put Meff_P1_y3_x3 @;
+370               put Meff_P2_y3_x3 @;
+371               put Meff_P1_y4_x1 @;
+372               put Meff_P2_y4_x1 @;
+373               put Meff_P1_y4_x2 @;
+374               put Meff_P2_y4_x2 @;
+375               put Meff_P1_y4_x3 @;
+376               put Meff_P2_y4_x3 @;
+377               put Meff_P1_y4_x4 @;
+378               put Meff_P2_y4_x4 @;
+379               put Prob_y1 @;
+380               put Prob_y2 @;
+381               put Prob_y3 @;
+382               put Prob_y4 ;
+383               ;
+384             end;
+385            if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro
+385      ! variable */
+386            if EFIEOD then call symputx('_EFIREC_',EFIOUT);
+387            run;
+
+NOTE: The file 'C:\cygwin64\home\MarvinW\work_scratch\mod_out.csv' is:
+      Filename=C:\cygwin64\home\MarvinW\work_scratch\mod_out.csv,
+      RECFM=V,LRECL=32767,File Size (bytes)=0,
+      Last Modified=11Jan2016:11:56:41,
+      Create Time=08Jan2016:16:15:49
+
+NOTE: 5001 records were written to the file 'C:\cygwin64\home\MarvinW\work_scratch\mod_out.csv'.
+      The minimum record length was 377.
+      The maximum record length was 398.
+NOTE: There were 5000 observations read from the data set WORK.MOD_OUT.
+NOTE: DATA statement used (Total process time):
+      real time           0.03 seconds
+      cpu time            0.03 seconds
+      
+
+5000 records created in C:\cygwin64\home\MarvinW\work_scratch\mod_out.csv from MOD_OUT.
+  
+  
+NOTE: "C:\cygwin64\home\MarvinW\work_scratch\mod_out.csv" file was successfully created.
+NOTE: PROCEDURE EXPORT used (Total process time):
+      real time           0.05 seconds
+      cpu time            0.06 seconds
+      
+
+
+NOTE: SAS Institute Inc., SAS Campus Drive, Cary, NC USA 27513-2414
+11                                       The SAS System           11:52 Monday, January 11, 2016
+
+NOTE: The SAS System used:
+      real time           4:23.60
+      cpu time            4:22.51
+      
