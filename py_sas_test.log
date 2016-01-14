@@ -1,4 +1,4 @@
-1                                                          The SAS System                             11:52 Monday, January 11, 2016
+1                                                          The SAS System                          14:07 Wednesday, January 13, 2016
 
 NOTE: Unable to open SASUSER.REGSTRY. WORK.REGSTRY will be opened instead.
 NOTE: All registry changes will be lost at the end of the session.
@@ -24,7 +24,7 @@ NOTE: Additional host information:
  X64_7PRO WIN 6.1.7601 Service Pack 1 Workstation
 
 NOTE: SAS initialization used:
-      real time           0.17 seconds
+      real time           0.15 seconds
       cpu time            0.12 seconds
       
 1          *Read in simulated data;
@@ -38,7 +38,7 @@ NOTE: SAS initialization used:
 8           *   PRODUCT:   SAS
 9           *   VERSION:   9.4
 10          *   CREATOR:   External File Interface
-11          *   DATE:      11JAN16
+11          *   DATE:      13JAN16
 12          *   DESC:      Generated SAS Datastep Code
 13          *   TEMPLATE SOURCE:  (None Specified.)
 14          ***********************************************************************/
@@ -53,7 +53,7 @@ NOTE: SAS initialization used:
 22                informat x4 best32. ;
 23                informat y1 best32. ;
 24                informat y2 best32. ;
-2                                        The SAS System           11:52 Monday, January 11, 2016
+2                                        The SAS System        14:07 Wednesday, January 13, 2016
 
 25                informat y3 best32. ;
 26                informat y4 best32. ;
@@ -92,31 +92,31 @@ NOTE: SAS initialization used:
 
 NOTE: The infile 'C:\cygwin64\home\MarvinW\work_scratch\stata_test_data.csv' is:
       Filename=C:\cygwin64\home\MarvinW\work_scratch\stata_test_data.csv,
-      RECFM=V,LRECL=32767,File Size (bytes)=440436,
-      Last Modified=11Jan2016:11:52:17,
+      RECFM=V,LRECL=32767,File Size (bytes)=440281,
+      Last Modified=13Jan2016:14:07:41,
       Create Time=07Jan2016:15:58:51
 
 NOTE: 5000 records were read from the infile 
       'C:\cygwin64\home\MarvinW\work_scratch\stata_test_data.csv'.
-      The minimum record length was 80.
-      The maximum record length was 91.
+      The minimum record length was 79.
+      The maximum record length was 90.
 NOTE: The data set WORK.TEST has 5000 observations and 12 variables.
 NOTE: DATA statement used (Total process time):
-      real time           0.03 seconds
+      real time           0.01 seconds
       cpu time            0.00 seconds
       
 
 5000 rows created in WORK.TEST from C:\cygwin64\home\MarvinW\work_scratch\stata_test_data.csv.
   
-3                                        The SAS System           11:52 Monday, January 11, 2016
+3                                        The SAS System        14:07 Wednesday, January 13, 2016
 
   
   
 NOTE: WORK.TEST data set was successfully created.
 NOTE: The data set WORK.TEST has 5000 observations and 12 variables.
 NOTE: PROCEDURE IMPORT used (Total process time):
-      real time           0.07 seconds
-      cpu time            0.04 seconds
+      real time           0.05 seconds
+      cpu time            0.06 seconds
       
 
 58         
@@ -136,8 +136,8 @@ NOTE: The data set WORK.MOD_EST has 22 observations and 23 variables.
 NOTE: The data set WORK.MOD_OUT has 5000 observations and 40 variables.
 NOTE: The PROCEDURE QLIM printed pages 1-2.
 NOTE: PROCEDURE QLIM used (Total process time):
-      real time           4:23.24
-      cpu time            4:22.25
+      real time           3:45.47
+      cpu time            3:44.76
       
 
 68         
@@ -150,7 +150,7 @@ NOTE: There were 22 observations read from the data set WORK.MOD_EST.
 NOTE: The data set WORK.MOD_EST has 22 observations and 23 variables.
 NOTE: DATA statement used (Total process time):
       real time           0.00 seconds
-      cpu time            0.01 seconds
+      cpu time            0.00 seconds
       
 
 73         data mod_out;
@@ -163,7 +163,7 @@ NOTE: DATA statement used (Total process time):
       real time           0.00 seconds
       cpu time            0.00 seconds
       
-4                                        The SAS System           11:52 Monday, January 11, 2016
+4                                        The SAS System        14:07 Wednesday, January 13, 2016
 
 
 76         
@@ -178,7 +178,7 @@ NOTE: DATA statement used (Total process time):
 84          *   PRODUCT:   SAS
 85          *   VERSION:   9.4
 86          *   CREATOR:   External File Interface
-87          *   DATE:      11JAN16
+87          *   DATE:      13JAN16
 88          *   DESC:      Generated SAS Datastep Code
 89          *   TEMPLATE SOURCE:  (None Specified.)
 90          ***********************************************************************/
@@ -218,7 +218,7 @@ NOTE: DATA statement used (Total process time):
 123               ','
 124                  "y4_x1"
 125               ','
-5                                        The SAS System           11:52 Monday, January 11, 2016
+5                                        The SAS System        14:07 Wednesday, January 13, 2016
 
 126                  "y4_x2"
 127               ','
@@ -273,7 +273,7 @@ NOTE: DATA statement used (Total process time):
 176               put y2_Intercept @;
 177               put y2_x1 @;
 178               put y2_x2 @;
-6                                        The SAS System           11:52 Monday, January 11, 2016
+6                                        The SAS System        14:07 Wednesday, January 13, 2016
 
 179               put y3_Intercept @;
 180               put y3_x1 @;
@@ -300,7 +300,7 @@ NOTE: DATA statement used (Total process time):
 NOTE: The file 'C:\cygwin64\home\MarvinW\work_scratch\mod_est.csv' is:
       Filename=C:\cygwin64\home\MarvinW\work_scratch\mod_est.csv,
       RECFM=V,LRECL=32767,File Size (bytes)=0,
-      Last Modified=11Jan2016:11:56:41,
+      Last Modified=13Jan2016:14:11:28,
       Create Time=08Jan2016:16:15:49
 
 NOTE: 23 records were written to the file 'C:\cygwin64\home\MarvinW\work_scratch\mod_est.csv'.
@@ -318,7 +318,7 @@ NOTE: DATA statement used (Total process time):
 NOTE: "C:\cygwin64\home\MarvinW\work_scratch\mod_est.csv" file was successfully created.
 NOTE: PROCEDURE EXPORT used (Total process time):
       real time           0.02 seconds
-      cpu time            0.01 seconds
+      cpu time            0.03 seconds
       
 
 199        proc export data=mod_out
@@ -328,12 +328,12 @@ NOTE: PROCEDURE EXPORT used (Total process time):
 203        run;
 
 204         /**********************************************************************
-7                                        The SAS System           11:52 Monday, January 11, 2016
+7                                        The SAS System        14:07 Wednesday, January 13, 2016
 
 205         *   PRODUCT:   SAS
 206         *   VERSION:   9.4
 207         *   CREATOR:   External File Interface
-208         *   DATE:      11JAN16
+208         *   DATE:      13JAN16
 209         *   DESC:      Generated SAS Datastep Code
 210         *   TEMPLATE SOURCE:  (None Specified.)
 211         ***********************************************************************/
@@ -383,7 +383,7 @@ NOTE: PROCEDURE EXPORT used (Total process time):
 254               ','
 255                  "Meff_P1_y2_x1"
 256               ','
-8                                        The SAS System           11:52 Monday, January 11, 2016
+8                                        The SAS System        14:07 Wednesday, January 13, 2016
 
 257                  "Meff_P2_y2_x1"
 258               ','
@@ -438,7 +438,7 @@ NOTE: PROCEDURE EXPORT used (Total process time):
 307               format y2 best12. ;
 308               format y3 best12. ;
 309               format y4 best12. ;
-9                                        The SAS System           11:52 Monday, January 11, 2016
+9                                        The SAS System        14:07 Wednesday, January 13, 2016
 
 310               format r_in best12. ;
 311               format obs_in best12. ;
@@ -493,7 +493,7 @@ NOTE: PROCEDURE EXPORT used (Total process time):
 360               put Meff_P2_y1_x1 @;
 361               put Meff_P1_y2_x1 @;
 362               put Meff_P2_y2_x1 @;
-10                                       The SAS System           11:52 Monday, January 11, 2016
+10                                       The SAS System        14:07 Wednesday, January 13, 2016
 
 363               put Meff_P1_y2_x2 @;
 364               put Meff_P2_y2_x2 @;
@@ -525,7 +525,7 @@ NOTE: PROCEDURE EXPORT used (Total process time):
 NOTE: The file 'C:\cygwin64\home\MarvinW\work_scratch\mod_out.csv' is:
       Filename=C:\cygwin64\home\MarvinW\work_scratch\mod_out.csv,
       RECFM=V,LRECL=32767,File Size (bytes)=0,
-      Last Modified=11Jan2016:11:56:41,
+      Last Modified=13Jan2016:14:11:28,
       Create Time=08Jan2016:16:15:49
 
 NOTE: 5001 records were written to the file 'C:\cygwin64\home\MarvinW\work_scratch\mod_out.csv'.
@@ -548,9 +548,9 @@ NOTE: PROCEDURE EXPORT used (Total process time):
 
 
 NOTE: SAS Institute Inc., SAS Campus Drive, Cary, NC USA 27513-2414
-11                                       The SAS System           11:52 Monday, January 11, 2016
+11                                       The SAS System        14:07 Wednesday, January 13, 2016
 
 NOTE: The SAS System used:
-      real time           4:23.60
-      cpu time            4:22.51
+      real time           3:45.78
+      cpu time            3:45.04
       

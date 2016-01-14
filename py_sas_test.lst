@@ -1,4 +1,4 @@
-                                         The SAS System       11:52 Monday, January 11, 2016   1
+                                         The SAS System    14:07 Wednesday, January 13, 2016   1
 
                                        The QLIM Procedure
 
@@ -7,8 +7,8 @@
                                                               Total
                             Index         Value           Frequency
 
-                              1             0                  2189
-                              2             1                  2811
+                              1             0                  2228
+                              2             1                  2772
 
 
                                 Discrete Response Profile of y2
@@ -16,8 +16,8 @@
                                                               Total
                             Index         Value           Frequency
 
-                              1             0                  2217
-                              2             1                  2783
+                              1             0                  2242
+                              2             1                  2758
 
 
                                 Discrete Response Profile of y3
@@ -25,8 +25,8 @@
                                                               Total
                             Index         Value           Frequency
 
-                              1             0                  2189
-                              2             1                  2811
+                              1             0                  2158
+                              2             1                  2842
 
 
                                 Discrete Response Profile of y4
@@ -34,8 +34,8 @@
                                                               Total
                             Index         Value           Frequency
 
-                              1             0                  3855
-                              2             1                  1145
+                              1             0                  3877
+                              2             1                  1123
 
 
 
@@ -45,15 +45,15 @@
                         Number of Endogenous Variables                 4
                         Endogenous Variable                  y1 y2 y3 y4
                         Number of Observations                      5000
-                        Log Likelihood                             -8413
-                        Maximum Absolute Gradient               12.36832
-                        Number of Iterations                          48
+                        Log Likelihood                             -8485
+                        Maximum Absolute Gradient                3.35466
+                        Number of Iterations                          51
                         Optimization Method                 Quasi-Newton
-                        AIC                                        16866
-                        Schwarz Criterion                          16997
-                        Seed for Monte Carlo Integration       338495001
+                        AIC                                        17010
+                        Schwarz Criterion                          17140
+                        Seed for Monte Carlo Integration       262736001
                         Number of Draws                               20
-                                         The SAS System       11:52 Monday, January 11, 2016   2
+                                         The SAS System    14:07 Wednesday, January 13, 2016   2
 
                                        The QLIM Procedure
 
@@ -65,23 +65,23 @@ Algorithm converged.
                                                      Standard                 Approx
            Parameter       DF        Estimate           Error    t Value    Pr > |t|
 
-           y1.Intercept     1        0.161275        0.017484       9.22     <.0001 
-           y1.x1            1        1.099069        0.062436      17.60     <.0001 
-           y2.Intercept     1        0.891106        0.032226      27.65     <.0001 
-           y2.x1            1        0.084168        0.060965       1.38     0.1674 
-           y2.x2            1       -0.882944        0.032609     -27.08     <.0001 
-           y3.Intercept     1        1.011857        0.078285      12.93     <.0001 
-           y3.x1            1       -1.945929        0.071338     -27.28     <.0001 
-           y3.x2            1        0.414401        0.067658       6.12     <.0001 
-           y3.x3            1       -0.774113        0.034651     -22.34     <.0001 
-           y4.Intercept     1       -6.000879        0.184753     -32.48     <.0001 
-           y4.x1            1        0.938476        0.093006      10.09     <.0001 
-           y4.x2            1       -0.117934        0.091531      -1.29     0.1976 
-           y4.x3            1        2.952334        0.084422      34.97     <.0001 
-           y4.x4            1       -0.526701        0.173232      -3.04     0.0024 
-           _Rho.y1.y2       1        0.998940        0.000551    1813.09     <.0001 
-           _Rho.y1.y3       1        0.164840        0.023000       7.17     <.0001 
-           _Rho.y1.y4       1        0.153627        0.031405       4.89     <.0001 
-           _Rho.y2.y3       1        0.165028        0.022968       7.19     <.0001 
-           _Rho.y2.y4       1        0.163134        0.031264       5.22     <.0001 
-           _Rho.y3.y4       1        0.749707        0.024015      31.22     <.0001 
+           y1.Intercept     1        0.142152        0.017743       8.01     <.0001 
+           y1.x1            1        1.213535        0.063139      19.22     <.0001 
+           y2.Intercept     1        0.943324        0.036875      25.58     <.0001 
+           y2.x1            1        0.163842        0.062007       2.64     0.0082 
+           y2.x2            1       -0.961477        0.038931     -24.70     <.0001 
+           y3.Intercept     1        1.018329        0.078514      12.97     <.0001 
+           y3.x1            1       -1.942970        0.070505     -27.56     <.0001 
+           y3.x2            1        0.408998        0.065742       6.22     <.0001 
+           y3.x3            1       -0.763299        0.034995     -21.81     <.0001 
+           y4.Intercept     1       -5.979232        0.183698     -32.55     <.0001 
+           y4.x1            1        1.045231        0.093792      11.14     <.0001 
+           y4.x2            1       -0.291902        0.089924      -3.25     0.0012 
+           y4.x3            1        2.997916        0.085397      35.11     <.0001 
+           y4.x4            1       -0.287537        0.174736      -1.65     0.0999 
+           _Rho.y1.y2       1        0.998058        0.000831    1200.53     <.0001 
+           _Rho.y1.y3       1        0.172642        0.023062       7.49     <.0001 
+           _Rho.y1.y4       1        0.136096        0.031245       4.36     <.0001 
+           _Rho.y2.y3       1        0.177573        0.023015       7.72     <.0001 
+           _Rho.y2.y4       1        0.147543        0.031292       4.72     <.0001 
+           _Rho.y3.y4       1        0.723568        0.025239      28.67     <.0001 
