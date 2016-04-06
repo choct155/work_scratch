@@ -1,0 +1,511 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass report
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Dynamic Behavior of Households
+\end_layout
+
+\begin_layout Chapter
+Motivation
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Motivation"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The primary economic decision making units in an economy are households,
+ firms, and governments.
+ The latter two may be thought of as derivative formulations of the first,
+ insofar as the economic agent population contained in households include
+ the parallel populations in both firms and governments (as well as the
+ unemployed).
+ From a different angle, the existence of firms and governments (and their
+ associated activity) can be viewed as a property of the environment in
+ which agents in the household population make decisions about consumption,
+ saving, and labor supply.
+ If an individual agent is associated with a firm or government, both the
+ nature of that association and the income derived from it are transitory
+ attributes of the agent.
+ Firms and governments are, at the core, collections of these agents mobilized
+ for common purpose.
+ For these reasons, the foundational character of the household seems a
+ reasonable basis for building a model of the economy.
+\end_layout
+
+\begin_layout Standard
+A focus on households provides an opportunity to explore interesting questions
+ related to the distribution of resources and economic growth.
+ The focus here will be on the intersection of these two ideas.
+ The classic conventional wisdom on this intersection was given voice by
+ Art Okun in 1975:
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Quotes eld
+\end_inset
+
+[...] I am wandering away from my usual concerns briefly to discuss an even
+ more nagging and pervasive tradeoff, that between equality and efficiency.
+ It is, in my view, our biggest socioeconomic tradeoff, and it plagues us
+ in dozens of dimensions of social policy.
+ We can't have our cake of market efficiency and share it equally.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Of course, Okun was not so rigid on this proposal as the quote suggests.
+ He acknowledged that some policies would push growth and equality in the
+ same direction.
+ For example, investment in human capital across larger swaths of the population
+ would serve to improve potential productivity.
+ He did, however, believe there were a limited number of levers that could
+ result in such action.
+ The extent and contents of the relevant set of policies that can increase
+ efficiency and equality is generally worthy of exploration.
+ That was true in Okun's time, and as Larry Summers indicates in the foreward
+ to the 2015 re-release of 
+\emph on
+Equality and Efficiency: The Big Tradeoff
+\emph default
+, it is even more true in an era in which labor market institutions that
+ mobilized in defense of workers has atrophied significantly.
+ 
+\end_layout
+
+\begin_layout Standard
+The purpose of this evolving document is to capture the ongoing development
+ of my thoughts on this work, and the results of the analytic work done
+ in service of it.
+ The chapters that follow are unlikely to be all that coherent, insofar
+ as I place no restrictions on the type of content.
+ One chapter may house an analytic exercise while the next houses a contained
+ paper.
+ Yet others may devolve into a diatribes about method.
+ I guess it may be best described as a technical journal.
+ In any event, the goal is to extract some publishable content along the
+ way.
+ Though this area is motivated strongly by my experience as a public official,
+ it is a sharp divergence from my graduate work on subnational fiscal institutio
+ns in many ways.
+ Consequently, I am building from the ground up.
+\end_layout
+
+\begin_layout Section
+An Operational Agenda
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:An-Operational-Agenda"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To study the intersection between efficiency and equality, this research
+ program will rely on the development of large dynamic models of household
+ behavior.
+ At the outset, the most appropriate method (alluded to in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Motivation"
+
+\end_inset
+
+) is a niavely ambitious agent-based simulation.
+ Individual agents will respond to their economic environment to make decisions
+ about saving, consumption, and labor supply.
+ They will arrange themselves in households of varying sizes and make residentia
+l siting decisions.
+ All of these decisions will be governed by available wage rates (by way
+ of human capital assets), parametric consumption preferences, macroeconomic
+ conditions, and interaction with the tax and transfer system.
+ These agents are also temporally finite.
+ They will age, potentially generate offspring, and die.
+ Fortunately, in each time period, they will report back on their income,
+ asset wealth, and location.
+\end_layout
+
+\begin_layout Standard
+Now, obviously this is wildly unrealistic.
+ (In fact, the model will henceforth be referred to as the Wildly Unrealistic
+ Model, WUM.) I am not aware of a model that can capture all of these features,
+ and it seems rather unlikely that it is either mathematically or computationall
+y possible to build all of these features into a single model.
+ However, a 
+\begin_inset Quotes eld
+\end_inset
+
+one model
+\begin_inset Quotes erd
+\end_inset
+
+ view is a useful way to fix a research agenda.
+ It also provides a method of thinking systematically about the off model
+ work that must be done to carry that agenda out.
+ Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Off-Model-Parametric"
+
+\end_inset
+
+ captures the parametric information required to operationalize WUM.
+ In these early stages, the list will be far from exhaustive, but gaps will
+ become abundantly clear over time.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\series bold
+Off Model Parametric Targets
+\series default
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Off-Model-Parametric"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{3bp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="9cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Decision
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Parameters
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Saving
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Marginal Propensity to Save by Income
+\end_layout
+
+\begin_layout Plain Layout
+Expected Lifetime by Income
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Consumption
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Marginal Propensity to Consume by Good Type
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Labor Supply
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Marginal Net Tax Rate
+\end_layout
+
+\begin_layout Plain Layout
+Average Net Tax Rate
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Siting
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Commuting Costs
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The WUM objective is most appropriately viewed as a guide post, highlighting
+ a path with a number of milestones.
+ Each milestone seeks to capture a progressively larger set of the functions
+ described above.
+ The first task is to explore whether spatial configurations of economic
+ agents actually matter for economic growth in a very simple, spatially
+ fixed system of trade.
+ The second is to explore age-dependent behavior in a very simple life cycle
+ model.
+ The purpose of these exercises is less about discovery than the establishment
+ of familiarity with the machinery required to fill out WUM.
+ The more functional models from a policy analysis standpoint will come
+ later.
+ 
+\emph on
+The overarching goal, however, is to build a suite of tools over time that
+ can use 
+\begin_inset Quotes eld
+\end_inset
+
+basic facts
+\begin_inset Quotes erd
+\end_inset
+
+ about household decisions to understand the implications of fiscal policy
+ as an emergent output of the interaction between many agents
+\emph default
+.
+\end_layout
+
+\begin_layout Section
+Tools of the Trade
+\end_layout
+
+\begin_layout Standard
+For computational models of any size, analysts often turn to Fortran or
+ C to leverage the raw speed of these low-level languages.
+ Fortran is very prominent in the tax microsimulation community, while C
+ (particularly C++) is a frequent choice in financial analysis circles.
+ This program, by contrast, will rely most heavily on 
+\begin_inset CommandInset href
+LatexCommand href
+name "Julia"
+target "http://julialang.org/"
+
+\end_inset
+
+.
+ Julia offers the development speed of Python by avoiding overly verbose
+ syntax, but still benchmarks very well against Fortran and C.
+ It is a relatively new language, which is somewhat of a drawback.
+ Due to a longer development period, there are simply more 
+\begin_inset Quotes eld
+\end_inset
+
+off the shelf
+\begin_inset Quotes erd
+\end_inset
+
+ tools associated with other languages (e.g.
+ Python).
+ For this reason, and perhaps other unseen exigencies of development, other
+ languages may sneak in from time to time.
+ Julia, however, will be the workhorse.
+\end_layout
+
+\begin_layout Standard
+This program will involve a substantial amount of code development, which
+ necessitates the need for version control.
+ Folks seem to be pretty into the whole replication deal as well.
+ I will be using 
+\begin_inset CommandInset href
+LatexCommand href
+name "Git"
+target "https://git-scm.com/"
+
+\end_inset
+
+ for this purpose, largely because I am familiar with it and it has not
+ failed me yet.
+ It also facilitates collaboration via 
+\begin_inset CommandInset href
+LatexCommand href
+name "Github"
+target "https://github.com/"
+
+\end_inset
+
+, where I will host all code and documentation publicly.
+\end_layout
+
+\end_body
+\end_document
