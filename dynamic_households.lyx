@@ -507,5 +507,60 @@ target "https://github.com/"
 , where I will host all code and documentation publicly.
 \end_layout
 
+\begin_layout Chapter
+Thinking About Growth in Space
+\end_layout
+
+\begin_layout Quotation
+First Law of Geography: 
+\begin_inset Quotes eld
+\end_inset
+
+Everything is related to everything else, but near things are more related
+ than distant things.
+\begin_inset Quotes erd
+\end_inset
+
+ W.R.
+ Tobler (1970)
+\end_layout
+
+\begin_layout Standard
+When two parties engage in commerce, it is a natural impulse to focus on
+ the objects of trade in thinking about the trade's viability.
+ If a beer is $3, that seems to me to be a good price, and I am likely to
+ engage in such a trade over a rather wide range of beer quality.
+ If, by contrast, the beer is $15, the range of qualities that can induce
+ me to engage is dramatically reduced.
+ However, the contained pecuniary cost of the beer is but one of the costs
+ to be considered.
+ If that $15 beer is in Bloomingdale, within walking distance of Stronghold
+ (my illustrious neighborhood here in DC), $15 is quite close to the full
+ cost of that beer.
+ If the $3 beer is Charlottesville, VA, the price actually captures very
+ little of the complete cost.
+ The cost of traversing the space between me and the beer is non-trivial.
+ If we allow distance to be generalized in the abstract, such is the case
+ with all trade.
+\end_layout
+
+\begin_layout Standard
+Spatial distances, specifically, are much less of a problem for commerce
+ than they used to be.
+ Online commerce continues to impede on in-person activity, but the latter
+ still constitutes a major portion of all transactions.
+ Online transactions have been most prevalent in retail sales, and even
+ here so-called 
+\begin_inset Quotes eld
+\end_inset
+
+e-commerce
+\begin_inset Quotes erd
+\end_inset
+
+ is a relatively small proportion of the total.
+ http://www.census.gov/retail/index.html
+\end_layout
+
 \end_body
 \end_document
