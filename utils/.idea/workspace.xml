@@ -2,158 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="879d5a48-6c71-4948-a4fb-b57951a47935" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/HISTORY_REQS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.ipynb_checkpoints/ACEF_Ch2-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../.ipynb_checkpoints/ACEF_Ch2-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.ipynb_checkpoints/CensusPovThresh-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../.ipynb_checkpoints/CensusPovThresh-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.ipynb_checkpoints/JuliaTypes-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../.ipynb_checkpoints/JuliaTypes-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.ipynb_checkpoints/MG_Data_Sim-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../.ipynb_checkpoints/MG_Data_Sim-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.ipynb_checkpoints/SimulationConstruct-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../.ipynb_checkpoints/SimulationConstruct-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.ipynb_checkpoints/f2py-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../.ipynb_checkpoints/f2py-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Gini_coefficient.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../Gini_coefficient.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JuliaTypes.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../JuliaTypes.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MG_Data_Sim.html" beforeDir="false" afterPath="$PROJECT_DIR$/../MG_Data_Sim.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MG_Data_Sim.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../MG_Data_Sim.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MoblGamr.html" beforeDir="false" afterPath="$PROJECT_DIR$/../MoblGamr.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TEL_bind_states_lab.png" beforeDir="false" afterPath="$PROJECT_DIR$/../TEL_bind_states_lab.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../f2py.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../f2py.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello_world.f90" beforeDir="false" afterPath="$PROJECT_DIR$/../hello_world.f90" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model_dump" beforeDir="false" afterPath="$PROJECT_DIR$/../model_dump" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/ch1/hello_word.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/ch1/hello_word.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/ch1/string_ops_SO.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/ch1/string_ops_SO.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/Makefile.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/Makefile.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/README" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/README" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/agentgrid.gnuplot" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/agentgrid.gnuplot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/amongwithin.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/amongwithin.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/argv.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/argv.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/bdayfns.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/bdayfns.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/bdaystruct.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/bdaystruct.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/bimodality.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/bimodality.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/birds/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/birds/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/birds/arrayflock.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/birds/arrayflock.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/birds/birds.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/birds/birds.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/birds/birds.h" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/birds/birds.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/birds/birds2.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/birds/birds2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/birds/birds_array.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/birds/birds_array.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/birds/birds_list.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/birds/birds_list.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/birds/birds_tree.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/birds/birds_tree.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/birds/bkup.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/birds/bkup.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/birds/listflock.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/birds/listflock.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/birds/newmain.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/birds/newmain.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/birds/treeflock.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/birds/treeflock.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/birthday.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/birthday.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/btree.dot" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/btree.dot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/callbyadd.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/callbyadd.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/callbyval.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/callbyval.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/candidates.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/candidates.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/candidates2.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/candidates2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/cltdemo.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/cltdemo.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/cooks.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/cooks.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/corrupt.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/corrupt.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-census.db" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-census.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-classroom" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-classroom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-climate.db" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-climate.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-corruption.db" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-corruption.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-debt" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-debt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-genes" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-genes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-markov" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-markov" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-metro.db" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-metro.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-nes.db" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-nes.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-regressme" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-regressme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-tattoo.db" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-tattoo.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-tv" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-tv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-wb-classes" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-wb-classes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-wb-gdp" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-wb-gdp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-wb-pop" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-wb-pop" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-wb.db" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/data-wb.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/databoot.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/databoot.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/datafiltering.dot" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/datafiltering.dot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/debt.gnuplot" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/debt.gnuplot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/drawbeta.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/drawbeta.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/drawfrompop.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/drawfrompop.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/dummies.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/dummies.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/econ101.analytic.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/econ101.analytic.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/econ101.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/econ101.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/econ101.main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/econ101.main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/eigenbox.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/eigenbox.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/eigenbox.h" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/eigenbox.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/eigeneasy.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/eigeneasy.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/eigenhard.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/eigenhard.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/env.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/env.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/errorbars.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/errorbars.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/fisher.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/fisher.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/flow.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/flow.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/fortunate.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/fortunate.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/ftest.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/ftest.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/fuzz.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/fuzz.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/getopt.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/getopt.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/getstring.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/getstring.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/gkeys.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/gkeys.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/goodfit.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/goodfit.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/hello_world.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/hello_world.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/jackiteration.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/jackiteration.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/jitter.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/jitter.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/lattice.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/lattice.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/life.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/life.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/links.dot" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/links.dot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/localmax.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/localmax.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/localmax_print.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/localmax_print.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/lrnonnest.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/lrnonnest.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/lrtest.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/lrtest.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/maoi.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/maoi.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/mar.dot" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/mar.dot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/markov.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/markov.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/metro-lines.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/metro-lines.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/metro_ridership.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/metro_ridership.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/metroanova.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/metroanova.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/models.dot" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/models.dot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/multiplicationtable.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/multiplicationtable.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/newols.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/newols.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/normalboot.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/normalboot.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/normalgrowth.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/normalgrowth.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/normallr.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/normallr.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/normaltable.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/normaltable.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/notanumber.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/notanumber.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/oneboot.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/oneboot.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/oneboot.h" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/oneboot.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/out.h" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/out.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/pipeplot.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/pipeplot.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/plot_histogram.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/plot_histogram.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/plotafunction.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/plotafunction.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/powersoftwo.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/powersoftwo.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/primes.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/primes.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/primes2.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/primes2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/probitlevels.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/probitlevels.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/projection.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/projection.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/projectiontwo.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/projectiontwo.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/qqplot.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/qqplot.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/queries" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/queries" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/read_metro.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/read_metro.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/ridership.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/ridership.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/selfexecute.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/selfexecute.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/simpleshell.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/simpleshell.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/sinsq.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/sinsq.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/smoothing.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/smoothing.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/squarecircle.gnuplot" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/squarecircle.gnuplot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/squares.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/squares.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/statedummies.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/statedummies.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/taxes.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/taxes.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/tdistkurtosis.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/tdistkurtosis.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/test.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/test.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/time.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/time.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/timefisher.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/timefisher.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/ttest.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/ttest.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/ttest.long.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/ttest.long.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/wbtodata.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/mwd_book_samples/wbtodata.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/tests/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/tests/makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/tests/two_data_streams/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/tests/two_data_streams/makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelingwithdata/tests/two_data_streams/two_data_streams.c" beforeDir="false" afterPath="$PROJECT_DIR$/../modelingwithdata/tests/two_data_streams/two_data_streams.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tax_theory.md" beforeDir="false" afterPath="$PROJECT_DIR$/../tax_theory.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/hydra.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/HISTORY_REQS.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/HISTORY_REQS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/stronghold/App.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/com/stronghold/AppTest.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/com/stronghold/MySpec.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils.iml" beforeDir="false" afterPath="$PROJECT_DIR$/utils.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -167,62 +29,126 @@
     <session id="-1827465206">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="md" value="1599" />
+          <entry key="scala" value="1186" />
           <entry key="xml" value="191" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="1599" />
+          <entry key="Scala" value="1186" />
           <entry key="XML" value="191" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="md" value="1" />
+          <entry key="md" value="2" />
+          <entry key="scala" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Scala" value="6" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1155">
-              <caret line="77" column="33" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/docs/HISTORY_REQS.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="375">
-                <caret line="10" column="169" selection-start-line="10" selection-start-column="169" selection-end-line="10" selection-end-column="169" />
-              </first_editor>
-              <second_editor>
-                <markdownNavigatorState />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/docs/HISTORY_REQS.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+                <state split_layout="SPLIT">
+                  <first_editor relative-caret-position="195">
+                    <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+                  </first_editor>
+                  <second_editor>
+                    <markdownNavigatorState />
+                  </second_editor>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/scala/com/stronghold/HistoryTree.scala">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/scala/com/stronghold/HistoryHash.scala">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/scala/com/stronghold/HistoryHashTest.scala">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+                  <folding>
+                    <element signature="e#24#53#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/scala/com/stronghold/Time.scala">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="45">
+                  <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/scala/com/stronghold/HistoryHashTest.scala">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+                  <folding>
+                    <element signature="e#24#53#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="ScalaTest Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -232,11 +158,13 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/docs/HISTORY_REQS.md" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/stronghold/Time.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/com/stronghold/HistoryHashTest.scala" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
+    <option name="x" value="264" />
     <option name="y" value="22" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
@@ -248,6 +176,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -292,19 +221,44 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="utils" type="b2602c69:ProjectViewProjectNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="utils" type="b2602c69:ProjectViewProjectNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="stronghold" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543709713270" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="ScalaTest" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.ScalaTest" value="org.scalatest.FunSuite" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../learning_scala" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.stronghold" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="org.scalatest.FunSuite" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -332,10 +286,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1044" extended-state="6" />
+    <frame x="0" y="0" width="2560" height="1404" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2524013" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.097056486" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -351,7 +305,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.33005464" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -375,11 +329,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/com/stronghold/AppTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/docs/HISTORY_REQS.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="375">
-            <caret line="10" column="169" selection-start-line="10" selection-start-column="169" selection-end-line="10" selection-end-column="169" />
+          <first_editor relative-caret-position="195">
+            <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
@@ -387,6 +348,37 @@
         </state>
       </provider>
       <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/stronghold/HistoryTree.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/stronghold/HistoryHash.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/stronghold/Time.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/com/stronghold/HistoryHashTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="e#24#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
