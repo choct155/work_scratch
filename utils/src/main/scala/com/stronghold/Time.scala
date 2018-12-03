@@ -7,4 +7,5 @@ case class Time(period: Int) extends Ordered[Time] {
     case laterThan if this.period > that.period => 1
     case sameTime if this.period == that.period => 0
   }
+
 }
