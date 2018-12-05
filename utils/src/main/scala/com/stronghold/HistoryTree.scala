@@ -26,7 +26,6 @@ class EmptyHTree extends HistoryTree {
 
 class HTree(_time: Option[Time], _value: Option[Any],
             left: HistoryTree = new EmptyHTree, right: HistoryTree = new EmptyHTree) extends HistoryTree {
-
   val time: Option[Time] = _time
   val value: Option[Any] = _value
 
