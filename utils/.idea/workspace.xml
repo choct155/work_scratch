@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="879d5a48-6c71-4948-a4fb-b57951a47935" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/stronghold/HistoryDebug.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/stronghold/HistoryScratch.sc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/stronghold/HistoryTree.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/stronghold/HistoryTree.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/com/stronghold/HistoryHashTest.scala" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,14 +29,14 @@
         <counts>
           <entry key="md" value="1599" />
           <entry key="sc" value="135" />
-          <entry key="scala" value="11806" />
+          <entry key="scala" value="12091" />
           <entry key="xml" value="198" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="1599" />
-          <entry key="Scala" value="11941" />
+          <entry key="Scala" value="12226" />
           <entry key="XML" value="198" />
         </counts>
       </usages-collector>
@@ -88,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/stronghold/HistoryTree.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
+            <state relative-caret-position="15">
+              <caret line="30" column="2" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -106,11 +100,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/com/stronghold/HistoryTreeTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="90" column="4" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="4" />
+            <state>
               <folding>
                 <element signature="e#24#53#0" expanded="true" />
               </folding>
@@ -130,8 +123,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/stronghold/HistoryDebug.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+            <state relative-caret-position="105">
+              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -244,7 +237,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543925543296" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543955540015" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="ScalaTest" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.ScalaTest" value="org.scalatest.FunSuite" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../learning_scala" />
@@ -328,12 +321,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HistoryTreeTest - 2018.12.03 at 19h 55m 37s.xml">
-      <configuration name="HistoryTreeTest" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="HistoryTreeTest - 2018.12.03 at 19h 57m 10s.xml">
-      <configuration name="HistoryTreeTest" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
     <history-entry file="HistoryTreeTest - 2018.12.03 at 19h 58m 26s.xml">
       <configuration name="HistoryTreeTest" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
@@ -356,6 +343,12 @@
       <configuration name="HistoryTreeTest" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
     <history-entry file="HistoryTreeTest - 2018.12.04 at 07h 12m 42s.xml">
+      <configuration name="HistoryTreeTest" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="HistoryTreeTest - 2018.12.04 at 08h 26m 56s.xml">
+      <configuration name="HistoryTreeTest" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="HistoryTreeTest - 2018.12.04 at 08h 28m 56s.xml">
       <configuration name="HistoryTreeTest" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
   </component>
@@ -437,13 +430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/stronghold/HistoryDebug.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/stronghold/Time.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -451,20 +437,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/stronghold/HistoryTree.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/stronghold/HistoryDebug.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
+        <state relative-caret-position="105">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/com/stronghold/HistoryTreeTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="90" column="4" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="4" />
+        <state>
           <folding>
             <element signature="e#24#53#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/stronghold/HistoryTree.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="30" column="2" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
         </state>
       </provider>
     </entry>
